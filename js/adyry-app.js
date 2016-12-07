@@ -1,5 +1,5 @@
 angular
-  .module('adyryApp', ["ngRoute"]);
+  .module('adyryApp', ['ngRoute', 'ngSanitize']);
 
 const routing = ($routeProvider) => {
   $routeProvider

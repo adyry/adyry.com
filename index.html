@@ -6,12 +6,16 @@
     <title>adyry.com</title>
     <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-   <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.min.js"></script>
     <script src="./js/adyry-app.js"></script>
     <script src="./js/menu-drv.js"></script>
+    <script src="./js/album-ctrl.js"></script>
+    <script src="./js/album-drv.js"></script>
+
 </head>
 <body ng-app="adyryApp">
   <div class="container">
@@ -21,20 +25,5 @@
       <a href="mailto:adrian@adyry.com" class="footer__link">&copy; 2016 Adrian Kowalczewski</a>
     </div>
   </div>
-
-<script>
-  var r_num=5;
-  $( ".menu_container__element" ).mouseenter(function(event) {
-    $(this).animate({"top": "+="+r_num}, 200 );
-  });
-  $( ".menu_container__element" ).mouseleave(function() {
-    $(this).animate({"top": "-="+r_num},500 );
-  });
-  $(".menu_container__element").click(function(event){
-    $(".content_container").css({"opacity":0})
-    $(".content_container").animate({"opacity":1},700)
-  });
-</script>
-
 </body>
 </html>
