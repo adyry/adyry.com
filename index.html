@@ -1,0 +1,307 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>adyry.com</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- this is one-file site, so I've decided to leave css in .html for easier review. -->
+    <style>
+        body {
+            font-family: Lato, serif;
+            font-size: 16px;
+            letter-spacing: 1px;
+            padding: 0;
+            margin: 0;
+            background: linear-gradient(90deg, #81d3e9, #84ef8b, #ad7ce0, #f09d9a, #d9de7f);
+            background-size: 1000vw 200px;
+            animation: bggrad 40s linear infinite;
+            -webkit-animation: bggrad 40s linear infinite;
+            -moz-animation: bggrad 40s linear infinite;
+            -o-animation: bggrad 40s linear infinite;
+            }
+
+        @-webkit-keyframes bggrad {
+            0%{background-position:0% 0%}
+            50%{background-position:0% 100%}
+            100%{background-position:0% 0%}
+        }
+        @-moz-keyframes bggrad {
+            0%{background-position:0% 0%}
+            50%{background-position:100% 0%}
+            100%{background-position:0% 0%}
+        }
+        @-o-keyframes bggrad {
+            0%{background-position:0% 0%}
+            50%{background-position:100% 0%}
+            100%{background-position:0% 0%}
+        }
+        @keyframes bggrad {
+            0%{background-position:0% 0%}
+            50%{background-position:100% 0%}
+            100%{background-position:0% 0%}
+        }
+        .container {
+            max-width:620px;
+            margin: auto;
+        }
+
+        .content_container {
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 15px;
+        }
+
+        .menu_container {
+            width: auto;
+            margin: 5px 0vw;
+            padding: 0;
+        }
+        .menu_container__element {
+            background-color: rgba(255, 253, 232, 0.68);
+            padding: 5px;
+            position: relative;
+            line-height: 2;
+            color: black;
+        }
+        .menu_container__element:hover {
+            cursor: pointer;
+        }
+        .content__overimg {
+            position: absolute;
+            top: 0px;
+            bottom: 3px;
+            left: 0px;
+            right: 0px;
+            padding: 12px;
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+        .content__separator {
+            line-height: 20pt;
+        }
+        .content__album {
+            position: relative;
+        }
+        .content__link {
+            color: rgb(25, 47, 50);
+        }
+        .content__link:hover {
+            color: rgb(85, 85, 85);
+            text-decoration: none;
+        }
+        .content__image {
+            width: 100%;
+        }
+        @media screen and (max-width: 600px) {
+            .content__overimg {
+                font-size: 3.2vw;
+            }
+        }
+        .footer {
+            margin: 5px;
+        }
+        .footer__link {
+          color: black;
+        }
+        .footer__link:hover {
+          color: rgb(101, 101, 101);
+        }
+
+    </style>
+    <script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="menu_container">
+        <a id="sites" class="menu_container__element">dev</a>
+        <a id="music" class="menu_container__element">music</a>
+        <a id="photo" class="menu_container__element">photo</a>
+        <a id="other" class="menu_container__element">other</a>
+        <a href="mailto:adrian@adyry.com" class="menu_container__element">adrian@adyry.com</a>
+    </div>
+    <div class="content_container"><!-- content goes here --></div>
+    <div class="footer">
+      <a href="mailto:adrian@adyry.com" class="footer__link">&copy; 2016 Adrian Kowalczewski</a>
+    </div>
+</div>
+<div style="display: none">
+    <div class="content" id="sites_content">
+      <h3>JS / html / sass / jQuery / gulp / wp / anything interesting</h3>
+      <a href="mailto:adrian@adyry.com" class="content__link">2016 Your site</a><br class="content__separator">
+      <a href="http://agataweber.pl/site2016/AW/" class="content__link" target="_blank">2016 AgataWeber.pl (work in progres)</a>:  Front-End developed in <b>Sass</b> with <b>Bootstrap</b> & <b>Gulp</b> (Sass Compiler, Autoprefixer, Live preview). Integrated with custom-tailored <b>WP</b> (Client choosen CMS for galleries management).<br class="content__separator">
+      2016 MagdaGłośniak.pl: <b>WP</b>(<b>php, JS, CSS</b>), fully customized child theme derived from default Twenty Sixteen theme. Custom prev/next post PHP widget with thumbnail. Not available online (customer's vision change)<br class="content__separator">
+      <a href="#" class="content__link">2016 This site</a> <b>html, css, jQuery, BEM</b><br class="content__separator">
+      <a href="http://spiekikwarcowe.com" target="_blank" class="content__link">2016 Spiekikwarcowe.com</a> WP: <b>basic php</b> theme edits, fully customized <b>CSS</b><br class="content__separator">
+      <a href="http://www.mm.pl/~kik" target="_blank" class="content__link">2016-2004 ad.r music</a><br class="content__separator">
+      2014 Application supporting the design of timber structure joints (Master's degree thesis). <b>Python</b>, utilizing SOLDIS API & Environment. App for designing rectangular cross-section timber elements connections, with metal fasteners, in any two dimensional state of stress.<br class="content__separator">
+      2013 Application supporting the design of steel beam-to-beam end plate connections. (Engineer's degree thesis) <b>Python</b>, utilizing SOLDIS API & Environment. App for designing end plate bolted connections, in any two dimensional state of stress.
+    </div>
+
+    <div class="content" id="music_content">
+      <h3>Catch me on:</h3>
+      <a href="http://soundcloud.com/ad-r" target="_blank" class="content__link">Soundcloud<i class="fa fa-soundcloud fa-3x"></i></a>
+      <a href="http://www.facebook.com/pages/adr/79035469786" target="_blank" class="content__link">Facebook<i class="fa  fa-facebook-square fa-3x"></i></a>
+      <a href="http://www.last.fm/music/Ad.R" target="_blank" class="content__link">Last.fm<i class="fa fa-lastfm-square fa-3x"></i></a>
+      <h3>Untitled (work in progress, 2017)</h3>
+        <iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/290429516&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221466788&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+      <h3>2013</h3>
+        <div class="content__album">
+          <img src="img/2013.jpg" class="content__image">
+          <div class="content__overimg">
+            01. Clocks 05:31<br>
+            02. Music is delay 03:21<br>
+            03. String 03:35<br>
+            04. Parus Major 02:58<br>
+            05. Delay is math 06:33<br>
+            06. Bridge 02:58<br>
+            All tracks made in 2013 by Adrian Kowalczewski. Track 2 (except drums) is made exclusively from guitar string sound. Track 3 (except drums) is made exclusively from Parus major sound. Track 5 is based on "Short dance song with glitch surprise" from "Short dance songs EP". Thank you to everything and everyone what/who is my inspiration.<br>
+            <a href="https://ad1r.bandcamp.com/album/2013" target="_blank" class="content__link">> Listen/buy</a>
+          </div>
+        </div>
+
+      <h3>Decay</h3>
+        <div class="content__album">
+          <IMG SRC="img/decayfront.jpg" class="content__image">
+          <div class="content__overimg">
+            Limited physical release only. Digital on request.<br />
+            01. Granates 07:31<br>
+            02. Tętno I 03:18<br>
+            03. Perypetie 07:36<br>
+            04. Do/Know 06:27<br>
+            05. Sleep 07:37<br>
+            06. Oddychaj 03:52<br>
+            07. Tętno II 03:18<br>
+            It's called decay becouse it's about it.
+            It's dedicated to love and dissolve, farewells and welcomes, without which I wouldn't make those tracks.
+            All tracks made in 2009-2012 by Adrian Kowalczewski. <br>
+            <A href="decay.html" target="_blank" class="content__link">> Listen to "Sleep"</a><br>
+              <a href="https://ad1r.bandcamp.com/album/2013" target="_blank" class="content__link">> Buy limited physical edition</a>
+            </div>
+          </div>
+
+        <h3>Select (parts 1 + 2)</h3>
+          <div class="content__album">
+            <IMG SRC="img/select.jpg" class="content__image">
+            <div class="content__overimg">
+              Released on testube netlabel [Tube162]<br>
+              Runtime: 37'25"<br>
+              01 Static: c<br>
+              02 Static: Select a<br>
+              03 Static: Select b<br>
+              04 Static: Select c<br>
+              05 Static: b<br>
+              06 Move: a<br>
+              07 Move: Short Guitar Song Part 2<br>
+              08 Move: Part 3<br>
+              <A href="http://testtube.monocromatica.com/releases/tube162.htm" target="_blank" class="content__link">> Get it now</A><br>
+              <br>
+              Reviews:<br>
+              <a href="http://testtube.monocromatica.com/releases/tube162.htm" target="_blank" class="content__link">Pedro Leitao [English]</a><br>
+              <a href="http://fabrikproject.com.mx/blog/?p=4514" target="_blank" class="content__link">Fabrik [English]</a>
+            </div>
+          </div>
+
+        <h3>Short Dance Songs EP</h3>
+          <div class="content__album">
+            <IMG SRC="img/sds.jpg" class="content__image">
+            <div class="content__overimg">
+              Released on testube netlabel [Tube130]<br>
+              Runtime: 23'24"<br>
+              01 Short Guitar Song<br>
+              02 Out Moon (Of)<br>
+              03 Short Movie Song<br>
+              04 Too Short 8 Bit Love Song<br>
+              05 Short Dance Song With Glitch Surprise<br>
+              06 Rozliczenie<br>
+              07 Short Vocal Song (parts 1 + 2)<br>
+              <a href="http://testtube.monocromatica.com/releases/tube130.htm" target="_blank" class="content__link">> Get it now</a><br><br>
+              Reviews:<br>
+              <a href="http://testtube.monocromatica.com/releases/tube130.htm" target="_blank" class="content__link">Pedro Leitao [English]</a><br>
+              <a href="http://axunarts.wordpress.com/2008/07/09/adr-short-dance-songs/" target="_blank" class="content__link">Axun [Polish]</a><br>
+              <a href="http://disquiet.com/2008/07/17/21st-century-mp3-variations-by-adrian-kowalczewski/" target="_blank" class="content__link">Marc Weidenbaum [disquiet.com] [English]</a><br>
+            </div>
+          </div>
+        <br>
+        <h3>Other</h3>
+
+        <h4>Released:</h4>
+          <a href=http://the-questionnaire.blogspot.com/2008/10/adrian-adr-kowalczewski.html target="_blank" class="content__link">The questionnaire - ad.r</a><br>
+          <small>the questionnaire project is based on the original "questionnaire of Marcel Proust" (french writer), created by Antoinette Faure around 1890 and now, submitted to a few personalities – the interest is on the confrontation and crossover between the original questions and nowadays vision on things</small><br><br>
+          <A HREF="http://otium.ru/?id=93" class="content__link" target="_blank"><IMG SRC="img/rdnes.jpg" width="100px" border="0" class="content__img" title="Rainy does not equal Sunny :: On otium netlabel<br>[OTR40]"/></A>
+          <a href="http://www.last.fm/music/KIK/Codzienno%C5%9B%C4%87" target="_blank" class="content__link"><img src="img/pl4.jpg" border="0" class="content__img" title="Kik - Codzienność::[2006]<br>1st official. Holded in chillout/ambient style  <br>/  pierwsza 'wypuszczona w świat',<br> utrzymana w klimacie downtempo/ambient<br><br>Click to listen on last.fm"></a>
+          <a href="http://www.last.fm/music/KIK/Wcielenia+Dwa" target="_blank" class="content__link"><img src="img/pl5.jpg" border="0" class="content__img" title="Kik - Wcielenia Dwa::[2006]<br>Experimental ambient <br> pychedelic electronica<br><br>Click to listen on last.fm"/></a>
+
+        <h4>Unreleased:</h4>
+          <a class="content__link"><img src="img/pl1.jpg" border="0" width=90 class="content__img" title="Daa szoł - Orginal::[~2002]<br>Recorded in ejay 2<br> - contains few skits recorded with schoolmates<br> in 4th class of grade school /<br> nagrana w programie ejay 2 - zawiera sporo skitów <br>nagranych z kolegami w 4 klasie podstawówki."/></a>
+          <a class="content__link"><img src="img/pl2.jpg" border="0" width=90 class="content__img" title="Kik - Ełkaliptus::[~2004]<br>1st CD with melodies <br>composed by myself <br>/ pierwsza nagrana samodzielnie,<br> bez użycia gotowych melodii"/></a>
+          <a class="content__link"><img src="img/pl3.jpg" border="0" width=90 class="content__img" title="Kik - Muzka i Muzyczki<br>Początek Wstępu::[~2005]<br>Contains tracks from Ełkaliptus <br>+ few new tracks in electronica climate<br>zawiera kilka utworów z &quot;Ełkaliptus&quot;,<br> oraz kilka nowych utrzymanych w klimacie electronica"/></a>
+          <a class="content__link"><img src="img/plc.jpg" border="0" width=90 class="content__img" title="Conceptualism::[2008]<br>Released as pchysical<br> promo CD only /<br> Rozpowszechniona jako<br> fizyczne promo"/></a><br>
+
+        <h4>Productions / Produkcje</h4>
+          PNP - Gracjan Roztocki [2008]<br>
+          Ad.R - Bez przesady feat. Peno [2008]<br>
+          Ad.R - Zaczarowany ołówek feat. AZR [2007]<br>
+          Zaginiona Mike'a Głowa - Rozkurcz [2008<br>
+          Zaginiona Mike'a Głowa - Cała prawda o nas [2008]<br>
+          Zaginiona Mike'a Głowa - Skit [2008]<br>
+
+        <h4>Scratching & Cuts / Skrecze</h4>
+          NSR feat.Peno+dj ad.r - Znasz Mnie [2008]<br>
+          Peno + Raszu - Pierwszy raz feat. dj ad.r [2008]<br>
+          Kdj - Być tu feat. Peno, dj. ad.r [2008]<br>
+    </div><!-- music -->
+
+    <div class="content" id="photo_content">
+          <a href="http://adyry.tumblr.com" target="_blank" class="content__link">
+            <img src="img/tumblr1.jpg" class="content__image">
+            <img src="img/tumblr2.jpg" class="content__image">
+            <img src="img/tumblr3.jpg" class="content__image">
+            <img src="img/tumblr4.jpg" class="content__image">
+            > See more
+          </a>
+    </div><!-- photo -->
+
+    <div class="content" id="other_content"><!-- other -->
+            <a href="https://sites.google.com/site/adriankowalczewski/" target="_blank" class="content__link">Adriankowalczewski @Googlesites</a>
+    </div><!-- Other -->
+
+</div><!-- display none -->
+<script>
+        var r_num=5;
+        var sites = $("#sites_content")
+        var music = $("#music_content")
+        var photo = $("#photo_content")
+        var other = $("#other_content")
+
+        $(document).ready(function() {
+          $(".content_container").html(sites);
+        });
+        $( ".menu_container__element" ).mouseenter(function(event) {
+          $(this).animate({"top": "+="+r_num}, 200 );
+        });
+        $( ".menu_container__element" ).mouseleave(function() {
+          $(this).animate({"top": "-="+r_num},500 );
+        });
+
+        $(".menu_container__element").click(function(event){
+          $(".content_container").css({"opacity":0})
+          $(".content_container").animate({"opacity":1},700)
+        });
+
+        $("#sites").click(function(event){
+          $(".content_container").html(sites);
+        });
+        $("#music").click(function(event){
+          $(".content_container").html(music);
+        });
+        $("#photo").click(function(event){
+          $(".content_container").html(photo);
+        });
+        $("#other").click(function(event){
+          $(".content_container").html(other);
+        });
+</script>
+</body>
+</html>
