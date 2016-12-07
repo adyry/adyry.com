@@ -7,4 +7,4 @@ const menu = () => {
 
 angular
   .module('adyryApp')
-  .directive('menu', menu)
+  .directive('menuBar', menu)
