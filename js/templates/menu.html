@@ -5,4 +5,20 @@
   <a href="#/other" class="menu_container__element">other</a>
   <a href="mailto:adrian@adyry.com" class="menu_container__element">adrian@adyry.com</a>
 </div>
-    
+
+<script>
+        var r_num=5;
+
+        $( ".menu_container__element" ).mouseenter(function(event) {
+          $(this).animate({"top": "+="+r_num}, 200 );
+        });
+        $( ".menu_container__element" ).mouseleave(function() {
+          $(this).animate({"top": "-="+r_num},500 );
+        });
+
+        $(".menu_container__element").click(function(event){
+          $(".content_container").css({"opacity":0})
+          $(".content_container").animate({"opacity":1},700)
+        });
+
+</script>
