@@ -1,0 +1,99 @@
+body {
+    font-family: Lato, serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(90deg, #81d3e9, #84ef8b, #ad7ce0, #f09d9a, #d9de7f);
+    background-size: 1000vw 200px;
+    animation: bggrad 40s linear infinite;
+    -webkit-animation: bggrad 40s linear infinite;
+    -moz-animation: bggrad 40s linear infinite;
+    -o-animation: bggrad 40s linear infinite;
+    }
+
+@-webkit-keyframes bggrad {
+    0%{background-position:0% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:0% 0%}
+}
+@-moz-keyframes bggrad {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 0%}
+    100%{background-position:0% 0%}
+}
+@-o-keyframes bggrad {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 0%}
+    100%{background-position:0% 0%}
+}
+@keyframes bggrad {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 0%}
+    100%{background-position:0% 0%}
+}
+.container {
+    max-width:620px;
+    margin: auto;
+}
+
+.content_container {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+}
+
+.menu_container {
+    width: auto;
+    margin: 5px 0vw;
+    padding: 0;
+}
+.menu_container__element {
+    background-color: rgba(255, 253, 232, 0.68);
+    padding: 5px;
+    position: relative;
+    line-height: 2;
+    color: black;
+}
+.menu_container__element:hover {
+    cursor: pointer;
+}
+.content__overimg {
+    position: absolute;
+    top: 0px;
+    bottom: 3px;
+    left: 0px;
+    right: 0px;
+    padding: 12px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.content__separator {
+    line-height: 20pt;
+}
+.content__album {
+    position: relative;
+}
+.content__link {
+    color: rgb(25, 47, 50);
+}
+.content__link:hover {
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+}
+.content__image {
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .content__overimg {
+        font-size: 3.2vw;
+    }
+}
+.footer {
+    margin: 5px;
+}
+.footer__link {
+  color: black;
+}
+.footer__link:hover {
+  color: rgb(101, 101, 101);
+}
