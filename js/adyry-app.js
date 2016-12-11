@@ -1,7 +1,7 @@
 angular
   .module('adyryApp', ['ngRoute', 'ngSanitize']);
 
-const routing = ($routeProvider) => {
+const routing = ($routeProvider, $locationProvider) => {
   $routeProvider
   .when("/develop", {
     templateUrl: "./js/templates/sites.html"
@@ -18,7 +18,9 @@ const routing = ($routeProvider) => {
   .otherwise({
     templateUrl: "./js/templates/sites.html"
   })
+
 };
+
 
 angular
   .module('adyryApp')
